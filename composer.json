@@ -1,13 +1,11 @@
 {
     "name": "dongrim/modules-inertia",
-    "description": "Relationship Vue/InertiaJs with modular structure nwidart/laravel-modules",
+    "description": "Relationship Vue/InertiaJs with modular structure Laravel-Modules",
     "keywords": [
         "nwidart", 
         "laravel-modules", 
-        "nwidart/laravel-modules", 
         "Vue", 
         "InertiaJS", 
-        "inertia",
         "laravel", 
         "php"
     ],
@@ -16,12 +14,6 @@
         {
             "name": "Yaroslav Fedan",
             "email": "yaroslav.fd@gmail.com"
-        }
-    ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/nWidart/laravel-modules"
         }
     ],
     "require": {

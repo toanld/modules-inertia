@@ -4,7 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 
-Пакет предназначен для использования Vue/InertiaJs совместно с [Laravel-Modules](https://github.com/nWidart/laravel-modules)
+The package is designed to be used by Vue/InertiaJs in conjunction with [Laravel-Modules](https://github.com/nWidart/laravel-modules)
 
 
 ## Laravel compatibility
@@ -108,7 +108,7 @@ createInertiaApp({
         if (isModule.length > 1) {
             let moduleName = isModule[0];
             let pathToFile = isModule[1];
-            //@modules is alias to module folder or simple ../../modules
+            //@modules is alias to module folder or examle ../../modules
             page = require(`@modules/${moduleName}/${pathToFile}.vue`);
         } else {
             page = require(`./Pages/${name}`);

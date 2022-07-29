@@ -18,10 +18,16 @@
             "email": "yaroslav.fd@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nWidart/laravel-modules"
+        }
+    ],
     "require": {
         "php": ">=7.4.0",
         "laravel/framework": "~6.0||^7.0||^8.0||^9.0",
-        "nwidart/laravel-modules": "^9.0",
+        "nwidart/laravel-modules": "dev-master",
         "inertiajs/inertia-laravel": "^0.6.3"
     },
     "autoload": {

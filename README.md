@@ -1,8 +1,6 @@
 # Modules-Inertia
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/dongrim/modules-inertia.svg?style=flat-square)](https://packagist.org/packages/dongrim/modules-inertia)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-
 
 The package is designed to be used by Vue/InertiaJs in conjunction with [Laravel-Modules](https://github.com/nWidart/laravel-modules)
 

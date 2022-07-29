@@ -1,0 +1,46 @@
+{
+    "name": "dongrim/modules-inertia",
+    "description": "Relationship Vue/InertiaJs with modular structure nwidart/laravel-modules",
+    "keywords": ["nwidart", "laravel-modules", "nwidart/laravel-modules", "Vue", "InertiaJS", "inertia" ,"laravel", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Fedan",
+            "email": "yaroslav.fd@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "laravel/framework": "~6.0||^7.0||^8.0||^9.0",
+        "nwidart/laravel-modules": "^9.0",
+        "inertiajs/inertia-laravel": "^0.6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dongrim\\ModulesInertia\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dongrim\\ModulesInertia\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.24",
+        "phpunit/phpunit": "9.5.*",
+        "laravel/pint": "^0.2.3",
+        "laravel/legacy-factories" : "1.x"
+    },
+    "extra" :{
+        "laravel": {
+            "providers": [
+                "Dongrim\\ModulesInertia\\ModulesInertiaServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

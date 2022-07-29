@@ -16,6 +16,12 @@
             "email": "yaroslav.fd@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nWidart/laravel-modules"
+        }
+    ],
     "require": {
         "php": ">=7.4.0",
         "laravel/framework": "~6.0||^7.0||^8.0||^9.0",
@@ -36,8 +42,7 @@
         "orchestra/testbench": "^6.24",
         "phpunit/phpunit": "9.5.*",
         "laravel/pint": "^0.2.3",
-        "laravel/legacy-factories" : "1.x",
-        "nwidart/laravel-module": "9.0-dev"
+        "laravel/legacy-factories" : "1.x"
     },
     "extra" :{
         "laravel": {

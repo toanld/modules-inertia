@@ -124,6 +124,12 @@ createInertiaApp({
 });
 ```
 
+## Console command
+
+**You can run `php artisan module:publish-stubs` to publish stubs.**
+
+**And override the generation of default files**
+
 
 ## After create module
 
@@ -132,11 +138,6 @@ createInertiaApp({
 ```bash
 npm run dev
 ```
-## Console command
-
-**You can run `php artisan module:publish-stubs` to publish stubs.**
-
-**And override the generation of default files**
 
 ## Documentation
 

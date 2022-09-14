@@ -71,7 +71,7 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
  'source' => 'Resources/Pages',
 ```
 
-### On Controller
+### For use in Controller
 
 **The default value of Inertia::render() in a module has been changed to Inertia::module().**
 
@@ -90,7 +90,7 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
         //...
     }
 ```
-### On Vue 2
+### If you use Vue version 2 
 
 **For example**
 
@@ -125,7 +125,7 @@ createInertiaApp({
 ```
 
 
-### On Vue 3
+### If you use Vue version 3
 
 **For example**
 

@@ -77,20 +77,41 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
 
 **Inertia::render() is still available by default. It can be used outside of modules**
 
+- **`module_name` - real name of the current module
+- **`file_name` - real name of the file (no extension .vue)
+- **`directory_name` -  if you have nested display folder structure ( you can specify the file path separating by a dot )
+
 **For example:**
 
 ```php
-    public function index()
+    public function some_method()
     {
-        return Inertia::module('module::file');
-        //or
-        return Inertia::module('module::file', ['data'=>'some data']);
-        //or
-        return Inertia::module('module::directory.file', ['data'=>'some data']);
-        //...
+        return Inertia::module('module_name::file_name');
+        //
+        return Inertia::module('module_name::file_name', ['data'=>'some data']);
+        //
+        return Inertia::module('module_name::directory_name.file_name', ['data'=>'some data']);
     }
 ```
+
 ### If you use Vue version 2 
+
+**For the convenience of specifying the path from the root directory to the module directory, you can add alias in webpack.mix.js**
+
+```javascript
+const path = require('path')
+
+mix.webpackConfig((webpack) => {
+    return {
+        resolve: {
+            alias: {
+                "@modules": path.resolve(__dirname + "/modules"),
+            },
+        },
+    };
+});
+
+```
 
 **For example**
 
@@ -106,7 +127,9 @@ createInertiaApp({
         if (isModule.length > 1) {
             let moduleName = isModule[0];
             let pathToFile = isModule[1];
-            //@modules is alias to module folder or examle ../../modules
+            // @modules is an alias of the module folder or just specify the path 
+            // from the root directory to the folder modules             
+            // for example ../../modules
             page = require(`@modules/${moduleName}/${pathToFile}.vue`);
         } else {
             page = require(`./Pages/${name}`);
@@ -127,6 +150,21 @@ createInertiaApp({
 
 ### If you use Vue version 3
 
+**For the convenience of specifying the path from the root directory to the module directory, you can add alias in vite.config.js**
+
+```javascript
+const path = require('path')
+
+export default defineConfig({
+  resolve:{
+    alias:{
+      '@modules' : path.resolve(__dirname + '/modules')
+    },
+  }
+})
+
+```
+
 **For example**
 
 ```javascript
@@ -141,8 +179,10 @@ createInertiaApp({
         if (isModule.length > 1) {
             let module = isModule[0];
             let pathTo = isModule[1];
-            //@modules is alias to module folder or examle ../../modules
-            page = require(`@modules/${module}/${pathTo}.vue`);
+            // @modules is an alias of the module folder or just specify the path 
+            // from the root directory to the folder modules             
+            // for example ../../modules
+            page = require(`@modules/${moduleName}/${pathToFile}.vue`);
         } else {
             page = require(`./Pages/${name}`);
         }

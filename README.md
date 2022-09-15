@@ -77,9 +77,9 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
 
 **Inertia::render() is still available by default. It can be used outside of modules**
 
-- **`module_name` - real name of the current module
-- **`file_name` - real name of the file (no extension .vue)
-- **`directory_name` -  if you have nested display folder structure ( you can specify the file path separating by a dot )
+- `module_name` - real name of the current module
+- `file_name` - real name of the file (no extension .vue)
+- `directory_name` -  if you have nested display folder structure ( you can specify the file path separating by a dot )
 
 **For example:**
 

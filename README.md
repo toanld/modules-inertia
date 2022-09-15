@@ -96,24 +96,6 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
 
 ### If you use Vue version 2 
 
-**For the convenience of specifying the path from the root directory to the module directory, you can add alias in webpack.mix.js**
-
-```javascript
-const path = require('path')
-
-mix.webpackConfig((webpack) => {
-    return {
-        resolve: {
-            alias: {
-                "@modules": path.resolve(__dirname + "/modules"),
-            },
-        },
-    };
-});
-
-```
-
-**For example**
 
 ```javascript
 import Vue from "vue";
@@ -150,22 +132,6 @@ createInertiaApp({
 
 ### If you use Vue version 3
 
-**For the convenience of specifying the path from the root directory to the module directory, you can add alias in vite.config.js**
-
-```javascript
-const path = require('path')
-
-export default defineConfig({
-  resolve:{
-    alias:{
-      '@modules' : path.resolve(__dirname + '/modules')
-    },
-  }
-})
-
-```
-
-**For example**
 
 ```javascript
 import { createApp, h } from "vue";
@@ -195,6 +161,40 @@ createInertiaApp({
             .mount(el);
     },
 });
+
+```
+
+## Aliases
+
+**For the convenience of specifying the path from the root directory to the module directory, you can add alias in webpack.mix.js**
+
+```javascript
+const path = require('path')
+
+mix.webpackConfig((webpack) => {
+  return {
+    resolve: {
+       alias: {
+         "@modules": path.resolve(__dirname + "/modules"),
+       },
+    },
+  };
+});
+
+```
+
+**For the convenience of specifying the path from the root directory to the module directory, you can add alias in vite.config.js**
+
+```javascript
+const path = require('path')
+
+export default defineConfig({
+  resolve:{
+    alias:{
+      '@modules' : path.resolve(__dirname + '/modules')
+    },
+  }
+})
 
 ```
 

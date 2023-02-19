@@ -9,7 +9,7 @@ The package is designed to be used by Vue/InertiaJs in conjunction with [Laravel
 
  Laravel      | modules-inertia
 :-------------|:----------
- 6.0-9.x (PHP 7.1 required) | 0.0.x
+ 6.0-10.x     | 0.0.x
 
 ## Installation
 

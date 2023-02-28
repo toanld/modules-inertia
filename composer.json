@@ -1,5 +1,5 @@
 {
-    "name": "dongrim/modules-inertia",
+    "name": "toanld/modules-inertia",
     "description": "Relationship Vue/InertiaJs with modular structure Laravel-Modules",
     "keywords": [
         "nwidart", 
@@ -19,8 +19,8 @@
     "require": {
         "php": ">=7.4.0",
         "laravel/framework": "~6.0||^7.0||^8.0||^9.0||^10.0",
-        "nwidart/laravel-modules": "^9.0.4",
-        "inertiajs/inertia-laravel": "^0.6.3"
+        "nwidart/laravel-modules": "^9.0.4||^10.0",
+        "inertiajs/inertia-laravel": "^0.6.3||^0.6.8"
     },
     "autoload": {
         "psr-4": {

@@ -16,7 +16,7 @@ The package is designed to be used by Vue/InertiaJs in conjunction with [Laravel
 **Install the package via composer.**
 
 ```bash
-composer require dongrim/modules-inertia
+composer require toanld/modules-inertia
 ```
 
 ## Config Files

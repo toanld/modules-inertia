@@ -35,7 +35,7 @@ php artisan vendor:publish --provider="Dongrim\ModulesInertia\ModulesInertiaServ
   "autoload": {
     "psr-4": {
       "App\\": "app/",
-      "Modules\\": "modules/",
+      "Modules\\": "Modules/",
       "Database\\Factories\\": "database/factories/",
       "Database\\Seeders\\": "database/seeders/"
   }

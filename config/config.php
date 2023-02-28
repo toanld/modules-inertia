@@ -27,7 +27,7 @@ return [
 
     'stubs' => [
         'enabled' => false,
-        'path' => base_path('vendor/dongrim/modules-inertia/stubs'),
+        'path' => base_path('vendor/toanld/modules-inertia/stubs'),
         'files' => [
             'routes/web' => 'Routes/web.php',
             'Pages/Index' => 'Resources/Pages/Index.vue',

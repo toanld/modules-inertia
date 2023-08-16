@@ -43,7 +43,7 @@ class ModulesInertiaSource
         $pathSource = $this->explodeString($string);
 
         foreach ($pathSource as $item) {
-            $path .= Str::title($item) . DIRECTORY_SEPARATOR;
+            $path .= $item . DIRECTORY_SEPARATOR;
         }
 
         return rtrim($path, DIRECTORY_SEPARATOR);
